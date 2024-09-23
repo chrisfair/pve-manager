@@ -30,6 +30,7 @@ Ext.define('PVE.qemu.Smbios1InputPanel', {
 	    fieldLabel: 'UUID',
 	    regex: /^[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}$/,
 	    name: 'uuid',
+	  	readOnly: true,
 	},
 	{
 	    xtype: 'textareafield',
@@ -66,6 +67,7 @@ Ext.define('PVE.qemu.Smbios1InputPanel', {
 		minHeight: '2em',
 	    },
 	    name: 'serial',
+	  	readOnly: true,
 	},
 	{
 	    xtype: 'textareafield',
